@@ -52,7 +52,7 @@ namespace MinhasNoticias
                 {
                     SourceStream.Seek(0, SeekOrigin.End);
                     byte[] result = new UTF8Encoding(true).GetBytes("\n"+txt);
-                    SourceStream.Write(result, 0, Math.Min(txt.Length + 10, result.Length));
+                    SourceStream.Write(result, 0, Math.Min(txt.Length + 999, result.Length));
                 }
 
                 return true;
